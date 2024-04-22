@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна сторінка</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        const isUserLogin = window.localStorage.getItem('isUserLogin')
+        console.log(isUserLogin)
+        if(!isUserLogin)  {
+            window.location.href = 'login.html'
+        }
+    </script>
+</head>
+<body>
+    <h1>Вітаємо на головній сторінці</h1>
+</body>
+</html>
